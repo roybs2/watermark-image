@@ -1,16 +1,20 @@
-Welcome to Watermark Image!
+# Welcome to Watermark Image!
 
-This package is written in python 3.5.4
 
 The package will let you watermark batch of images.
+This package is written in python 3.5.4
 
-# Installation:
+You have 3 methods you can use:
+
+### Installation
+
+
 
 You can install the watermark-image from PyPI:
 
-    - pip install watermark-image 
-
-# How to use:
+```sh
+$ pip install watermark-image 
+```
 
 You have 3 methods you can use:
 
@@ -41,4 +45,11 @@ You have 3 methods you can use:
 
 Note that the package supports only jpg\png 
 
-Hope you will enjoy :)
+
+License
+----
+
+MIT
+
+
+**Free Software, Hell Yeah!**
