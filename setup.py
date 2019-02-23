@@ -10,11 +10,11 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="watermarkImage",
-    version="1.0.0",
+    version="1.0.2",
     description="Watermark batch of images",
     long_description=README,
     long_description_content_type="text/markdown",
-    download_url="https://github.com/roybs2/watermark-image/archive/v1.0.0.tar.gz",
+    download_url="https://github.com/roybs2/watermark-image/archive/v1.0.1.tar.gz",
     url="https://github.com/roybs2/watermark-image",
     author="Roy Ben Shlomo",
     license="MIT",

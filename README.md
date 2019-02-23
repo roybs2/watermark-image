@@ -16,6 +16,15 @@ You can install the watermark-image from PyPI:
 $ pip install watermarkImage
 ```
 
+Example usage:
+    
+    
+```sh
+>>> from watermarkImage import Logic
+>>> list = Logic.watermarkDir(dirToSearch, logo, Position.TOP_LEFT)
+>>> Logic.saveImages(list, pathForNewImages)
+
+```
 You have 3 methods you can use:
 
 1. watermarkDir:
