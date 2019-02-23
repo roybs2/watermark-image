@@ -1,0 +1,7 @@
+#remove git cache:
+# git rm -r --cached <name of folder>
+
+venv/
+.idea/
+demo.py
+__pycache__/
