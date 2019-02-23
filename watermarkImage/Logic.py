@@ -1,7 +1,7 @@
 import PIL
 from PIL import Image
 import os
-from watermark.Position import Position
+from watermarkImage.Position import Position
 
 
 def changeOpacity(logoImage, opacityNumber):
@@ -118,3 +118,30 @@ def watermarkList(listOfImages, logo, position=Position.BOTTOM_RIGHT, opacity=5,
     except Exception as e:
         print('Something went wrong.')
         print(e.args)
+
+
+def main(dirToSearch, logo, opacity, size):
+    watermarkDir(dirToSearch, logo,)
+
+
+
+if __name__ == "__main__":
+    import argparse
+    print('here')
+    parser = argparse.ArgumentParser(description='Watermark logo image')
+    parser.add_argument('-dir', action="store", dest='dir', default=0)
+    parser.add_argument('-logo', action="store", dest='logo', default=0)
+    parser.add_argument('-opacity', action="store", dest='opacity', default=5)
+    parser.add_argument('-size', action="store", dest='size', default=2)
+    parser.add_argument('-position', action="store", dest='position', default=4)
+    parser.add_argument('-newPath', action="store", dest='newPath', default=os.getcwd()+'\\new')
+    args = parser.parse_args()
+    print(args)
+    dir = args.dir
+    logo = Image.open(args.logo)
+    opacity = args.opacity
+    size = args.size
+    position = args.position
+
+    list = watermarkDir(dir, logo, position, opacity, size)
+    saveImages(list, args.newPath)

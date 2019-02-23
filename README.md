@@ -13,7 +13,7 @@ You have 3 methods you can use:
 You can install the watermark-image from PyPI:
 
 ```sh
-$ pip install watermark-image 
+$ pip install watermarkImage
 ```
 
 You have 3 methods you can use:
